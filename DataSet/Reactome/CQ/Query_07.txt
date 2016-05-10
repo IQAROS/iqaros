@@ -1,0 +1,1 @@
+Q(?0,?1) <- Pathway(?0), displayName(?0,?1), pathwayComponent(?0,?2), BiochemicalReaction(?2), participant(?2,?3), Complex(?3), component(?3,?4), Protein(?4)

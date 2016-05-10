@@ -1,0 +1,2 @@
+Q(?0) <- Publication(?0), publicationAuthor(?0, ?1), Faculty(?1), isMemberOf(?1,http://www.Department0.University0.edu)
+

@@ -1,0 +1,4 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX benchmark: <http://semantics.crl.ibm.com/univ-bench-dl.owl#>
+SELECT DISTINCT ?x
+WHERE {?x rdf:type benchmark:Student . ?x benchmark:isMemberOf <http://semantics.crl.ibm.com/univ-bench-dl.owl#http://www.Department0.University0.edu> }

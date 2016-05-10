@@ -1,0 +1,1 @@
+Q(?0,?1) <- http://sws.ifi.uio.no/vocab/npd-v2#member(?0,?1), http://sws.ifi.uio.no/vocab/npd-v2#coreForWellbore(?1,?44), http://sws.ifi.uio.no/vocab/npd-v2#Wellbore(?44)

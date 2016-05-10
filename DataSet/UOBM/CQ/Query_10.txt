@@ -1,0 +1,1 @@
+Q(?0) <- isFriendOf(?0,http://www.Department0.University0.edu/FullProfessor0)

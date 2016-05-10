@@ -1,0 +1,11 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX a: <http://purl.obolibrary.org/obo/>
+PREFIX b: <http://purl.obolibrary.org/obo/FBbt#>
+
+SELECT DISTINCT ?x WHERE {
+?x rdf:type a:FBbt_00005106 .
+?x a:RO_0002131 ?y .
+?y rdf:type a:FBbt_00007401.
+?x b:develops_from ?z .
+?z rdf:type a:FBbt_00067346
+}

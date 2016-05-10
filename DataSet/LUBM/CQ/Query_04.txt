@@ -1,0 +1,2 @@
+Q(?0,?1,?2,?3) <- Professor(?0), worksFor(?0,http://www.Department0.University0.edu), name(?0,?1), emailAddress(?0,?2), telephone(?0, ?3)
+

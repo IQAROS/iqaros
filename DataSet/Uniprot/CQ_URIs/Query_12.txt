@@ -1,0 +1,1 @@
+Q(?0,?1,?2) <- http://purl.uniprot.org/core/Protein(?0), http://purl.uniprot.org/core/annotation(?0,?3), http://purl.uniprot.org/core/Transmembrane_Annotation(?3), http://purl.uniprot.org/core/range(?3,?4), http://biohackathon.org/resource/faldo#begin(?4,?1), http://biohackathon.org/resource/faldo#end(?4,?2)

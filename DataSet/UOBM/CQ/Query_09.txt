@@ -1,0 +1,1 @@
+Q(?0) <- GraduateCourse(?0), isTaughtBy(?0,?1), isMemberOf(?1,?2), subOrganizationOf(?2,http://www.University0.edu)

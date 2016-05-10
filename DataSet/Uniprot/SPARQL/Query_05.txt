@@ -1,0 +1,7 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+SELECT ?protein ?y
+WHERE
+{
+		?protein a up:Protein .
+		?protein up:mnemonic ?y 
+}

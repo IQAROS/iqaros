@@ -1,0 +1,12 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX faldo:<http://biohackathon.org/resource/faldo#> 
+SELECT ?protein ?begin ?end
+WHERE 
+{
+	?protein a up:Protein .
+	?protein up:annotation ?annotation .
+	?annotation a up:Transmembrane_Annotation .
+	?annotation up:range ?range .
+	?range faldo:begin ?begin .
+	?range faldo:end ?end
+}

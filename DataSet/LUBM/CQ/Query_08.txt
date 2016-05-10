@@ -1,0 +1,1 @@
+Q(?0,?1,?2) <- Student(?0), Department(?1), memberOf(?0,?1), subOrganizationOf(?1,http://www.University0.edu), emailAddress(?0,?2)

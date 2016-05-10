@@ -1,0 +1,3 @@
+Q(?0) <- SportsLover(?0), hasMember(http://www.Department0.University0.edu,?0)
+
+

@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX a: <http://www.biopax.org/release/biopax-level3.owl#>
+
+SELECT DISTINCT ?x ?y WHERE {
+?x rdf:type a:Pathway .
+?x a:displayName ?y .
+?x a:pathwayComponent ?z .
+?z rdf:type a:BiochemicalReaction .
+?z a:participant ?k .
+?k rdf:type a:Complex .
+?k a:complex ?l .
+?l rdf:type a:Protein .
+}

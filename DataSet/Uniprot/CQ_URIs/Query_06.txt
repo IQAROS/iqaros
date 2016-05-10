@@ -1,0 +1,1 @@
+Q(?0,?1) <- http://purl.uniprot.org/core/Protein(?0), http://www.w3.org/2000/01/rdf-schema#seeAlso(?0,?1), http://purl.uniprot.org/core/database(?1,http://purl.uniprot.org/database/PDB)

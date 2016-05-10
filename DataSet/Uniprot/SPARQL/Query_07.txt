@@ -1,0 +1,12 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX keywords:<http://purl.uniprot.org/keywords/> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+SELECT DISTINCT ?link
+WHERE
+{
+	?protein a up:Protein . 
+	?protein up:classifiedWith keywords:3 .
+	?protein rdfs:seeAlso ?link .
+	?link up:database ?db .
+	?db up:category "3D structure databases"
+}

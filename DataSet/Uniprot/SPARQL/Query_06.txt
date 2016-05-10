@@ -1,0 +1,9 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+SELECT ?protein ?db
+WHERE
+{
+		?protein a up:Protein .
+		?protein rdfs:seeAlso ?db .
+		?db up:database <http://purl.uniprot.org/database/PDB>
+}

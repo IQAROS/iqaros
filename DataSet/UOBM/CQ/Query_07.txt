@@ -1,0 +1,3 @@
+Q(?0) <- Person(?0), hasSameHomeTownWith(?0,http://www.Department0.University0.edu/FullProfessor0)
+
+

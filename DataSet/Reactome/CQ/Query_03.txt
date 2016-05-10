@@ -1,0 +1,1 @@
+Q(?0,?3) <- Pathway(?0), pathwayComponent(?0,?1), BiochemicalReaction(?1), participant(?1,?2), Protein(?2), entityReference(?2,?3)

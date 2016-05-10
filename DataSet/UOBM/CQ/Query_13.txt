@@ -1,0 +1,1 @@
+Q(?0) <- PeopleWithHobby(?0), isMemberOf(?0,http://www.Department0.University0.edu)

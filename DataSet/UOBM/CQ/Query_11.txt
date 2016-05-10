@@ -1,0 +1,1 @@
+Q(?0) <- like(?0,?1), isHeadOf(?2,http://www.Department0.University0.edu), Chair(?2), like(?2,?1), Person(?0)

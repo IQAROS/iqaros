@@ -1,0 +1,11 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX skos:<http://www.w3.org/2004/02/skos/core#> 
+SELECT ?protein ?name ?text
+WHERE
+{
+		?protein a up:Protein .
+		?protein up:recommendedName ?recommended .
+		?recommended up:fullName ?name .
+		?protein up:encodedBy ?gene .
+		?gene skos:prefLabel ?text 
+}

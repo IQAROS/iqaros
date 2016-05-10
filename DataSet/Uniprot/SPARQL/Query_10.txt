@@ -1,0 +1,15 @@
+PREFIX up:<http://purl.uniprot.org/core/> 
+PREFIX taxon:<http://purl.uniprot.org/taxonomy/> 
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos:<http://www.w3.org/2004/02/skos/core#> 
+SELECT ?name ?text
+WHERE
+{
+		?protein a up:Protein . 
+		?protein up:organism taxon:9606 .
+		?protein up:encodedBy ?gene . 
+		?gene skos:prefLabel ?name .
+		?protein up:annotation ?annotation .
+		?annotation a up:Disease_Annotation .
+		?annotation rdfs:comment ?text
+} 

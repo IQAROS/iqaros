@@ -1,0 +1,1 @@
+Q(?0,?1,?2) <- http://purl.uniprot.org/core/Protein(?0), http://purl.uniprot.org/core/recommendedName(?0,?3), http://purl.uniprot.org/core/fullName(?3,?1), http://purl.uniprot.org/core/encodedBy(?0,?4), http://www.w3.org/2004/02/skos/core#prefLabel(?4,?2)

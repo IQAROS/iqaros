@@ -1,0 +1,1714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY biopax-level3 "http://www.biopax.org/release/biopax-level3.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.biopax.org/release/biopax-level3.owl#"
+     xml:base="http://www.biopax.org/release/biopax-level3.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:biopax-level3="http://www.biopax.org/release/biopax-level3.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about=""/>    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#absoluteRegion -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;absoluteRegion"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#bindsTo -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;bindsTo"/>
+    <owl:ObjectProperty>
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;bindsTo"/>
+        <owl:inverseOf rdf:resource="&biopax-level3;bindsTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#cellType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;cellType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#cellularLocation -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;cellularLocation"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#cofactor -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;cofactor">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#component -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;component"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#componentStoichiometry -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;componentStoichiometry"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#confidence -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;confidence"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#controlled -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;controlled">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#controller -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;controller">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#dataSource -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;dataSource"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#deltaG -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;deltaG"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#entityFeature -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;entityFeature"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#entityReference -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;entityReference"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#entityReferenceType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;entityReferenceType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#evidence -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;evidence"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#evidenceCode -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;evidenceCode"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#experimentalFeature -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;experimentalFeature"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#experimentalForm -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;experimentalForm"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#experimentalFormDescription -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;experimentalFormDescription"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#experimentalFormEntity -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;experimentalFormEntity"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#feature -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;feature"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#featureLocation -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;featureLocation"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#featureLocationType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;featureLocationType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#interactionScore -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;interactionScore"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#interactionType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;interactionType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#kEQ -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;kEQ"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#left -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;left">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#memberEntityReference -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;memberEntityReference"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#modificationType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;modificationType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#nextStep -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;nextStep"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#notFeature -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;notFeature"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#organism -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;organism"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#participant -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;participant"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#participantStoichiometry -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;participantStoichiometry"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#pathwayComponent -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;pathwayComponent"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#pathwayOrder -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;pathwayOrder"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#phenotype -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;phenotype"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#physicalEntity -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;physicalEntity"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#product -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;product">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#regionType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;regionType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#relationshipType -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;relationshipType"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#right -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;right">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#scoreSource -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;scoreSource"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#sequenceIntervalBegin -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;sequenceIntervalBegin"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#sequenceIntervalEnd -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;sequenceIntervalEnd"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#stepConversion -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;stepConversion">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;stepProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#stepProcess -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;stepProcess"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#structure -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;structure"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#subRegion -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;subRegion"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#template -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;template">
+        <rdfs:subPropertyOf rdf:resource="&biopax-level3;participant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#tissue -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;tissue"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#xref -->
+
+    <owl:ObjectProperty rdf:about="&biopax-level3;xref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#0 -->
+
+    <owl:Class rdf:about="&biopax-level3;0"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#1 -->
+
+    <owl:Class rdf:about="&biopax-level3;1"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#10 -->
+
+    <owl:Class rdf:about="&biopax-level3;10"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#2 -->
+
+    <owl:Class rdf:about="&biopax-level3;2"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#3 -->
+
+    <owl:Class rdf:about="&biopax-level3;3"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#4 -->
+
+    <owl:Class rdf:about="&biopax-level3;4"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#5 -->
+
+    <owl:Class rdf:about="&biopax-level3;5"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#6 -->
+
+    <owl:Class rdf:about="&biopax-level3;6"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#7 -->
+
+    <owl:Class rdf:about="&biopax-level3;7"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#BindingFeature -->
+
+    <owl:Class rdf:about="&biopax-level3;BindingFeature">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#BioSource -->
+
+    <owl:Class rdf:about="&biopax-level3;BioSource">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#BiochemicalPathwayStep -->
+
+    <owl:Class rdf:about="&biopax-level3;BiochemicalPathwayStep">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PathwayStep"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#BiochemicalReaction -->
+
+    <owl:Class rdf:about="&biopax-level3;BiochemicalReaction">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Catalysis -->
+
+    <owl:Class rdf:about="&biopax-level3;Catalysis">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#CellVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;CellVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#CellularLocationVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;CellularLocationVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ChemicalStructure -->
+
+    <owl:Class rdf:about="&biopax-level3;ChemicalStructure">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Complex -->
+
+    <owl:Class rdf:about="&biopax-level3;Complex">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;3"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ComplexAssembly -->
+
+    <owl:Class rdf:about="&biopax-level3;ComplexAssembly">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Control -->
+
+    <owl:Class rdf:about="&biopax-level3;Control">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ControlledVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;ControlledVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Conversion -->
+
+    <owl:Class rdf:about="&biopax-level3;Conversion">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#CovalentBindingFeature -->
+
+    <owl:Class rdf:about="&biopax-level3;CovalentBindingFeature">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BindingFeature"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ModificationFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Degradation -->
+
+    <owl:Class rdf:about="&biopax-level3;Degradation">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#DeltaG -->
+
+    <owl:Class rdf:about="&biopax-level3;DeltaG">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Dna -->
+
+    <owl:Class rdf:about="&biopax-level3;Dna">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;7"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#DnaReference -->
+
+    <owl:Class rdf:about="&biopax-level3;DnaReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#DnaRegion -->
+
+    <owl:Class rdf:about="&biopax-level3;DnaRegion">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;2"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#DnaRegionReference -->
+
+    <owl:Class rdf:about="&biopax-level3;DnaRegionReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Entity -->
+
+    <owl:Class rdf:about="&biopax-level3;Entity"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#EntityFeature -->
+
+    <owl:Class rdf:about="&biopax-level3;EntityFeature">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#EntityReference -->
+
+    <owl:Class rdf:about="&biopax-level3;EntityReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#EntityReferenceTypeVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;EntityReferenceTypeVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Evidence -->
+
+    <owl:Class rdf:about="&biopax-level3;Evidence">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#EvidenceCodeVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;EvidenceCodeVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ExperimentalForm -->
+
+    <owl:Class rdf:about="&biopax-level3;ExperimentalForm">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ExperimentalFormVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;ExperimentalFormVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#FragmentFeature -->
+
+    <owl:Class rdf:about="&biopax-level3;FragmentFeature">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Gene -->
+
+    <owl:Class rdf:about="&biopax-level3;Gene">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#GeneticInteraction -->
+
+    <owl:Class rdf:about="&biopax-level3;GeneticInteraction">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Interaction -->
+
+    <owl:Class rdf:about="&biopax-level3;Interaction">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#InteractionVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;InteractionVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#KPrime -->
+
+    <owl:Class rdf:about="&biopax-level3;KPrime">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ModificationFeature -->
+
+    <owl:Class rdf:about="&biopax-level3;ModificationFeature">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Modulation -->
+
+    <owl:Class rdf:about="&biopax-level3;Modulation">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#MolecularInteraction -->
+
+    <owl:Class rdf:about="&biopax-level3;MolecularInteraction">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Pathway -->
+
+    <owl:Class rdf:about="&biopax-level3;Pathway">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#PathwayStep -->
+
+    <owl:Class rdf:about="&biopax-level3;PathwayStep">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#PhenotypeVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;PhenotypeVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#PhysicalEntity -->
+
+    <owl:Class rdf:about="&biopax-level3;PhysicalEntity">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Protein -->
+
+    <owl:Class rdf:about="&biopax-level3;Protein">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;4"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#ProteinReference -->
+
+    <owl:Class rdf:about="&biopax-level3;ProteinReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Provenance -->
+
+    <owl:Class rdf:about="&biopax-level3;Provenance">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#PublicationXref -->
+
+    <owl:Class rdf:about="&biopax-level3;PublicationXref">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Xref"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#RelationshipTypeVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;RelationshipTypeVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#RelationshipXref -->
+
+    <owl:Class rdf:about="&biopax-level3;RelationshipXref">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Xref"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Rna -->
+
+    <owl:Class rdf:about="&biopax-level3;Rna">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;6"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#RnaReference -->
+
+    <owl:Class rdf:about="&biopax-level3;RnaReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#RnaRegion -->
+
+    <owl:Class rdf:about="&biopax-level3;RnaRegion">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;0"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#RnaRegionReference -->
+
+    <owl:Class rdf:about="&biopax-level3;RnaRegionReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Score -->
+
+    <owl:Class rdf:about="&biopax-level3;Score">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SequenceInterval -->
+
+    <owl:Class rdf:about="&biopax-level3;SequenceInterval">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SequenceLocation -->
+
+    <owl:Class rdf:about="&biopax-level3;SequenceLocation">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SequenceModificationVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;SequenceModificationVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SequenceRegionVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;SequenceRegionVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SequenceSite -->
+
+    <owl:Class rdf:about="&biopax-level3;SequenceSite">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SmallMolecule -->
+
+    <owl:Class rdf:about="&biopax-level3;SmallMolecule">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;10"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#SmallMoleculeReference -->
+
+    <owl:Class rdf:about="&biopax-level3;SmallMoleculeReference">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Stoichiometry -->
+
+    <owl:Class rdf:about="&biopax-level3;Stoichiometry">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#TemplateReaction -->
+
+    <owl:Class rdf:about="&biopax-level3;TemplateReaction">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#TemplateReactionRegulation -->
+
+    <owl:Class rdf:about="&biopax-level3;TemplateReactionRegulation">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Control"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#TissueVocabulary -->
+
+    <owl:Class rdf:about="&biopax-level3;TissueVocabulary">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ControlledVocabulary"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Transport -->
+
+    <owl:Class rdf:about="&biopax-level3;Transport">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#TransportWithBiochemicalReaction -->
+
+    <owl:Class rdf:about="&biopax-level3;TransportWithBiochemicalReaction">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BiochemicalReaction"/>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#UnificationXref -->
+
+    <owl:Class rdf:about="&biopax-level3;UnificationXref">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Xref"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#UtilityClass -->
+
+    <owl:Class rdf:about="&biopax-level3;UtilityClass"/>
+    
+
+
+    <!-- http://www.biopax.org/release/biopax-level3.owl#Xref -->
+
+    <owl:Class rdf:about="&biopax-level3;Xref">
+        <rdfs:subClassOf rdf:resource="&biopax-level3;UtilityClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Control"/>
+        <owl:onProperty rdf:resource="&biopax-level3;controlled"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;left"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;feature"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;6"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;product"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Complex"/>
+        <owl:onProperty rdf:resource="&biopax-level3;component"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;participant"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;TemplateReaction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;template"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ExperimentalForm"/>
+        <owl:onProperty rdf:resource="&biopax-level3;experimentalFeature"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Control"/>
+        <owl:onProperty rdf:resource="&biopax-level3;controller"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;CellularLocationVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;cellularLocation"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceSite"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;sequenceIntervalEnd"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+        <owl:onProperty rdf:resource="&biopax-level3;right"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceRegionVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;featureLocationType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+        <owl:onProperty rdf:resource="&biopax-level3;participantStoichiometry"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhenotypeVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;phenotype"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Evidence"/>
+        <owl:onProperty rdf:resource="&biopax-level3;experimentalForm"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Stoichiometry"/>
+        <owl:onProperty rdf:resource="&biopax-level3;physicalEntity"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;4"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;controller"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;2"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;stepProcess"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty rdf:resource="&biopax-level3;cellularLocation"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PathwayStep"/>
+        <owl:onProperty rdf:resource="&biopax-level3;nextStep"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Score"/>
+        <owl:onProperty rdf:resource="&biopax-level3;scoreSource"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BindingFeature"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;bindsTo"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PathwayStep"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;pathwayOrder"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Xref"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;xref"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ChemicalStructure"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;structure"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;CellVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;cellType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Evidence"/>
+        <owl:onProperty rdf:resource="&biopax-level3;evidenceCode"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Evidence"/>
+        <owl:onProperty rdf:resource="&biopax-level3;confidence"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;1"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;template"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceInterval"/>
+        <owl:onProperty rdf:resource="&biopax-level3;sequenceIntervalBegin"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Evidence"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;evidence"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;InteractionVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;interactionType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;notFeature"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;5"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;experimentalFormEntity"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;KPrime"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;kEQ"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Provenance"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;dataSource"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;component"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Score"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;interactionScore"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ExperimentalForm"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;experimentalForm"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Catalysis"/>
+        <owl:onProperty rdf:resource="&biopax-level3;cofactor"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;TemplateReaction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;product"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BioSource"/>
+        <owl:onProperty rdf:resource="&biopax-level3;cellType"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;2"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;pathwayComponent"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+        <owl:onProperty rdf:resource="&biopax-level3;featureLocationType"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+        <owl:onProperty rdf:resource="&biopax-level3;memberEntityReference"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;memberEntityReference"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Score"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;confidence"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;entityReference"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;0"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;subRegion"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ExperimentalForm"/>
+        <owl:onProperty rdf:resource="&biopax-level3;experimentalFormDescription"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PathwayStep"/>
+        <owl:onProperty rdf:resource="&biopax-level3;stepProcess"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Entity"/>
+        <owl:onProperty rdf:resource="&biopax-level3;dataSource"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EvidenceCodeVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;evidenceCode"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;right"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BiochemicalReaction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;deltaG"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BiochemicalPathwayStep"/>
+        <owl:onProperty rdf:resource="&biopax-level3;stepConversion"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;TissueVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;tissue"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Pathway"/>
+        <owl:onProperty rdf:resource="&biopax-level3;pathwayOrder"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Complex"/>
+        <owl:onProperty rdf:resource="&biopax-level3;componentStoichiometry"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SmallMoleculeReference"/>
+        <owl:onProperty rdf:resource="&biopax-level3;structure"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceRegionVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;regionType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;RelationshipTypeVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;relationshipType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceLocation"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;featureLocation"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;RelationshipXref"/>
+        <owl:onProperty rdf:resource="&biopax-level3;relationshipType"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;physicalEntity"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BindingFeature"/>
+        <owl:onProperty rdf:resource="&biopax-level3;bindsTo"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceInterval"/>
+        <owl:onProperty rdf:resource="&biopax-level3;sequenceIntervalEnd"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BioSource"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;organism"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Stoichiometry"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;participantStoichiometry"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ExperimentalForm"/>
+        <owl:onProperty rdf:resource="&biopax-level3;experimentalFormEntity"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;DeltaG"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;deltaG"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Stoichiometry"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;componentStoichiometry"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BiochemicalReaction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;kEQ"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+        <owl:onProperty rdf:resource="&biopax-level3;entityReferenceType"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Interaction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;interactionType"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+        <owl:onProperty rdf:resource="&biopax-level3;left"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;cofactor"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty rdf:resource="&biopax-level3;feature"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Entity"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;participant"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Provenance"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;scoreSource"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;GeneticInteraction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;phenotype"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceModificationVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;modificationType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;GeneticInteraction"/>
+        <owl:onProperty rdf:resource="&biopax-level3;interactionScore"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ExperimentalFormVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;experimentalFormDescription"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;experimentalFeature"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;entityFeature"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReferenceTypeVocabulary"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;entityReferenceType"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PathwayStep"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;nextStep"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceLocation"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;absoluteRegion"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;BioSource"/>
+        <owl:onProperty rdf:resource="&biopax-level3;tissue"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityReference"/>
+        <owl:onProperty rdf:resource="&biopax-level3;entityFeature"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;SequenceSite"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;sequenceIntervalBegin"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;EntityFeature"/>
+        <owl:onProperty rdf:resource="&biopax-level3;featureLocation"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Conversion"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;stepConversion"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;ModificationFeature"/>
+        <owl:onProperty rdf:resource="&biopax-level3;modificationType"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;PhysicalEntity"/>
+        <owl:onProperty rdf:resource="&biopax-level3;notFeature"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;Pathway"/>
+        <owl:onProperty rdf:resource="&biopax-level3;pathwayComponent"/>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <rdfs:subClassOf rdf:resource="&biopax-level3;2"/>
+        <owl:onProperty>
+            <owl:ObjectProperty>
+                <owl:inverseOf rdf:resource="&biopax-level3;controlled"/>
+            </owl:ObjectProperty>
+        </owl:onProperty>
+        <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+    </owl:Restriction>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 0.9.2) http://owlapi.sourceforge.net -->
+
